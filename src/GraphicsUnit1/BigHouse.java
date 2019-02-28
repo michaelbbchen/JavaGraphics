@@ -24,6 +24,7 @@ public class BigHouse extends Canvas
    public void paint( Graphics window )
    {
       //call bigHouse
+       bigHouse(window);
    }
 
    public void bigHouse( Graphics window )
@@ -35,6 +36,12 @@ public class BigHouse extends Canvas
       window.setColor(Color.BLUE);
 
       window.fillRect( 200, 200, 400, 400 );
-
+      window.setColor(Color.red);
+      window.fillPolygon(new int[] {150,400,650}, new int[] {200,50,200}, 3);
+      window.setColor(Color.yellow);
+      window.fillRect(250, 250, 75, 100);
+      window.fillRect(475, 250, 75, 100);
+      window.setColor(Color.black);
+      window.fillRect(368, 460, 75, 100);
    }
 }
